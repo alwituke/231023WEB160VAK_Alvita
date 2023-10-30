@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html_task81.PNG</title>
+  </head>
+  <body>
+    <h1>Registracijos forma</h1>
+    <fieldset>
+      <legend>STUDENTAS</legend>
+      <table>
+        <tr>
+          <td><label for="Vardas">Vardas:</label></td>
+          <td><input type="name" id="Vardas" /></td>
+        </tr>
+        <tr>
+          <td><label for="email">El. paštas:</label></td>
+          <td><input type="email" id="email" /></td>
+        </tr>
+        <tr>
+          <td><label for="Gimimo data:">Gimimo data:</label></td>
+          <td><input type="date" id="Gimimo data:" name="Gimimo data:"></td>
+        </tr>
+        <tr>
+          <td><label for="Adresas:">Adresas:</label></td>
+          <td><input type="text" id="Adresas:" /></td>
+        </tr>
+        </table>
+        <table>
+            <label for="">Papildoma inforamcija:</label> <br>
+            <textarea rows="5" cols="70" placeholder=""></textarea>    
+        </table>     
+    </fieldset>
+    
+    <h1>Jūsų pomėgiai</h1>
+    <fieldset>
+        <legend>PASIRINKITE SAVO POMĖGIUS</legend>
+        <table>
+          <tr>
+            <label for="zero">Jūsų mėgstamas sportas?</label>
+            <br />
+            <label for="first">Krepšinis</label>
+            <input type="checkbox" name="grupe1" id="first" value="10" />
+            <label for="secound">Futbolas</label>
+            <input type="checkbox" name="grupe1" id="secound" value="20" />
+            <br />
+            <label for="third">Tinklinis</label>
+            <input type="checkbox" name="grupe1" id="third" value="30" />
+            <label for="fourth">Bėgimas</label>
+            <input type="checkbox" name="grupe1" id="fourth" value="40" />
+            <br />
+            <label for="fifth">Regbis</label>
+            <input type="checkbox" name="grupe1" id="fifth" value="50" />
+            <label for="sixth">Boksas</label>
+            <input type="checkbox" name="grupe1" id="sixth" value="60" />
+          </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <label for="fname">Jūsų mėgstamiausias filmo žanras?</label>
+                </td>
+                <td>
+                    <select id="" name="Komedija" class="">
+                        <option value="Komedija">Komedija</option>
+                        <option value="Veiksmo">Veikslo</option>
+                        <option value="Romantiniai">Romantiniai</option>
+                        <option value="Fantatiniai">Fantastiniai</option>
+                        <option value="Drama">Drama</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <label for="">Ar jums patinka keliauti?</label>
+        <br>
+        <label for="">Ne</label>
+        <input type="radio" name="grupe" id="" />
+        <label for="">Galbūt</label>
+        <input type="radio" name="grupe" id="" />
+        <label for="">Taip</label>
+        <input type="radio" name="grupe" id="" />
+        <br />
+        <br>
+        <input type="submit" value="Registruotis" />   
+    </fieldset>
+  </body>
+</html>

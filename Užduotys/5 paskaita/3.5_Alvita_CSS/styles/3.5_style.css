@@ -1,0 +1,46 @@
+form{
+    background-color: rgb(241, 241, 241);
+    padding: 18px;
+    font-family: sans-serif; 
+    font-size: 14px;
+    width: 650px;  
+    position: relative;
+}
+
+input[type="text"] {
+    border: 1px solid rgb(196, 196, 196);
+    font-size: 22px;
+    padding: 8px 24px;
+    margin: 15px 0 15px 0;
+    width: 90%;
+}
+
+input[type="email"] {
+    border: 1px solid rgb(196, 196, 196);
+    font-size: 22px;
+    padding: 8px 24px;
+    margin: 15px 0 15px 0;
+    width: 90%;
+}
+
+input[type="phone"] {
+    border: 1px solid rgb(196, 196, 196);
+    font-size: 22px;
+    padding: 8px 24px;
+    margin: 15px 0 15px 0;
+    width: 90%;
+}
+
+div.siųsti{
+    text-align: center;
+}
+
+input[type="submit"] 
+{
+    border-color: blue;
+    border-radius: 0.3cqi;
+    font-size: 25px;
+    padding: 10px 30px; 
+    
+}
+

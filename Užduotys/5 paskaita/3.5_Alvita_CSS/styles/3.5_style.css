@@ -5,6 +5,7 @@ form{
     font-size: 14px;
     width: 650px;  
     position: relative;
+    margin: auto;
 }
 
 input[type="text"] {

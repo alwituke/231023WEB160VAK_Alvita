@@ -1,0 +1,126 @@
+:root{
+    --H_F_grey:  rgb(97, 97, 97);
+    --S_C_grey:  rgb(39, 39, 39);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.397);
+}
+
+.container{
+    display: grid;
+    /* sukuriami trys stulpeliai */
+    grid-template-columns: 1fr 2fr 1fr;
+    /* sukuriamos trys eilutės */
+    grid-template-rows: auto auto auto;
+    /* kai norim keisti elementų turinio išdėstymo tvarką */
+    grid-template-areas:
+    'header header header'
+    'side content side2'
+    'footer footer footer';
+    /* fonas */
+    background-color: white;
+    /* nustatome konteinerio plotį */
+    width: 90%;
+    /* išcentruoja elementus */
+    margin: 0 auto;
+    /* tarpai tarp div elementų */
+    grid-gap: 10px;
+    /* kai norim kad visas konteineris turėtų kraštelį */
+    padding: 10px;
+}
+
+.header {
+    background-color: var(--H_F_grey);
+    color: white;
+    /* priskyrimas: grid-template-areas:
+    'header header'
+    'side content'
+    'footer footer'; */
+    grid-area: header;
+}
+
+.sidebar {
+    background-color: var(--S_C_grey);
+    color: white;
+    grid-area: side;
+}
+
+.sidebar2 {
+    background-color: rgb(207, 207, 207);
+    grid-area: side2;
+}
+
+.content{
+    background-color:var(--S_C_grey);
+    color: white;
+    grid-area: content;
+}
+
+.footer{
+    background-color:var(--H_F_grey);
+    color: white;
+    grid-area: footer;
+}
+
+/* div su klase container viduje */
+.container div {
+    /* tarpai nuo div krašto visuose contaider divuose */
+    padding: 5px;
+    border-radius: 3px;
+}
+
+p {
+    margin: 1px;
+}
+
+.header p {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 1199px){
+    .container{
+    display: grid;
+    grid-template-columns: 1fr 3.5fr ;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "header header"
+    "side content"
+    "side2 side2"
+    "footer footer";
+    /* nustatome konteinerio plotį */
+    width: 100%;}
+  
+    .sidebar2 p {
+        margin-bottom: 80px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+        "header"
+        "side"
+        "content"
+        "side2"
+        "footer";
+        /* nustatome konteinerio plotį */
+        width: 100%;}
+      
+        .sidebar p {
+            margin-bottom: 80px;
+        }       
+}
+

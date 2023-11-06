@@ -1,0 +1,63 @@
+.wrapper{
+    margin: 0 auto;
+    width: 50%;
+    background-color: rgb(196, 193, 193);  
+}
+
+.container{
+    display: flex;
+    /* elemenai bloko centre */
+    justify-content: center;
+    /* height: 600px; */
+    background-color: #aaaaaa;
+    /* flex-wrap: wrap; */
+}
+
+/* jei selektoriaus svoriai vienodi laimi tas kuris vėliau aprašytas */
+/* .box {
+    width: 100px;
+    height: 100px;
+} */
+
+.first-box {
+    background-color: red;
+    width: 100px;
+    flex-grow: 1;
+    /* flex-shrink: 0; */
+}
+
+.second-box {
+    background-color: green;
+    /* height: 200px;  */
+    width: 60%;
+    /* flex-shrink: 1; */
+}
+
+.third-box {
+    background-color: blue;
+    width: 100px;
+    /* flex-shrink: 0; */
+    flex-grow: 1;
+}
+
+.gallery{
+    /* elementus išdėsto vienoje eilurėje */
+    display: flex;
+    /* nustumti nuo kito elemento */
+    margin-top: 50px;
+    /* jei netelpa norim kad keliautu i kita ailute */
+    flex-wrap: wrap;
+    /* kra6tin4 prie ka6tini7 o vidurys per viduri o tarpas padalintas tarp elementu */
+    justify-content: space-between;
+}
+
+.gallery img {
+    /* width: 30%; */
+    /* jei turiu 100 proc. paveiksl4lius turiu 3 (/3) ir data atimti 60 px */
+    width: calc(100%/2-20px);
+    /* padding: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

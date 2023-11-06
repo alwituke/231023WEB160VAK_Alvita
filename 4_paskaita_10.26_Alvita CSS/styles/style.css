@@ -39,34 +39,43 @@ div.side-menu, div.content {
     vertical-align: top;
 }
 
+
 div.side-menu {
     width: 25%;
     background-color: cadetblue;
 }
 
 div.content {
-    width: 70%;
+    width: 75%;
     background-color: #dadada;
+}
+
+div.side-menu ul {
+    padding: 0;
+    list-style-type: none;
 }
 
 ul li {
     font-size: 16px;
 }
 
+
+/* nuimti taškučius nuo išvardinimų esančių div side-menu ul 
+div.side-menu ul {
+    patrauke iki krašto
+    padding: 0;
+    nuima burbuliukus arba galima pakesti į kitokį 
+    list-style-type: none;
+}
+*/
+
+
 h2 {
-    font-size: 33px;
+    font-size: 32px;
 }
 
 p {
     font-size: 20 px;
-}
-
-/* nuimti taškučius nuo išvardinimų esančių div side-menu ul */
-div.side-menu ul {
-    /* patrauke iki krašto */
-    padding: 0;
-    /* nuima burbuliukus arba galima pakesti į kitokį */
-    list-style-type: none;
 }
 
 /* išimti margin nuo "Striapsnio antraštė" */

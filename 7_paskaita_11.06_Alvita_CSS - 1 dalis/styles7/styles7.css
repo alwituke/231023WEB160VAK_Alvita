@@ -1,0 +1,65 @@
+body{
+    background-color: orange;
+}
+
+.container{
+    display: grid;
+    /* sukuriami du stulpeliai */
+    grid-template-columns: 1fr 4fr;
+    /* sukuriamos dvi eilutės, vėliau atsiranda trečia eilutė */
+    grid-template-rows: auto 150px auto;
+    /* kai norim keisti elementų turinio išdėstymo tvarką */
+    grid-template-areas:
+    'side header'
+    'side content'
+    'side footer';
+    /* fonas */
+    background-color: #f1c675;
+    /* nustatome konteinerio plotį */
+    width: 90%;
+    /* išcentruoja elementus */
+    margin: 0 auto;
+    /* tarpai tarp div elementų */
+    grid-gap: 10px;
+    /* kai norim kad visas konteineris turėtų kraštelį */
+    padding: 10px;
+}
+
+.header{
+    background-color:#80ff84;
+    /* priskyrimas: grid-template-areas:
+    'header header'
+    'side content'
+    'footer footer'; */
+    grid-area: header;
+    /* apjungti du elementus - kad HEADER eitų per du stulpelius */
+    /* grid-column: span 2; */
+   
+}
+
+.sidemenu{
+    background-color:#80aaff;
+    /* kai norim kad sidemenu būtų per tris eilutes pirmame stulpelyje */
+    /* grid-row: span 3; */
+    grid-area: side;
+}
+
+.content{
+    background-color:#e180ff;
+    grid-area: content;
+}
+
+.footer{
+    background-color:#ff8080;
+    /* apjungti du elementus - kad footer eitų per du stulpelius */
+    /* grid-column: span 2; */
+    grid-area: footer;
+}
+
+/* div su klase container viduje */
+.container div {
+    /* kai norime tik 1 lygio div naudojant ženklą mažiau
+    .container > div { */
+    /* tarpai nuo div krašto visuose contaider divuose */
+    padding: 20px;
+}

@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.gap {
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px;
+}
+
+body {
+    border-style: double;
+    font-family: 'complex', Courier, monospace;
+}
+
+div {
+    padding: 15px;
+}
+
+
+.menu {
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+}
+
+.paveikslėliai {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.image {
+    width: 100%;
+}
+
+p {
+    margin-top: 0px;
+}
+
+.pagrindinis {
+    color: rgb(255, 51, 0);
+}

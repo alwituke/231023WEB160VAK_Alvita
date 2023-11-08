@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icon aprašas ir materialize - nėra skirtumo kur dėti icon dokumentacijos aprašą, bet geriausiai viršuje -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- rašome viešuje kad jeigu reikės būtų galima koreguoti -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- savo css failą dėti visada paskutinį, jeigu norėsi pasikoreguoti -->
+    <link rel="stylesheet" href="styles_8/style_8.css">
+    <title>8 paskaita</title>
+</head>
+
+<body class="yellow lighten-5">
+
+    <div class="container">
+    <!-- <h1 class="orange lighten-3 orange-text text-darken-4 center-align hide-on-large-only">CSS paskutinis užsiėmimas</h1> -->
+    
+    <h1 class="orange lighten-3 orange-text text-darken-4 center-align">CSS paskutinis užsiėmimas</h1>
+    
+    <!-- jei norim įdėti ikonėlę į mygtuką (mygtukas - btn. o ikona per i class..) -->
+    <!-- <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a> -->
+    <a class="waves-effect waves-light btn orange"><i class="material-icons left">cloud</i>button</a>
+
+    <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+      </ul>
+
+
+    <table>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+          </tr>
+      </table>
+    
+      <!-- stulpelių lygiavimas GRID per materialize -->
+      <div class="row center-align white-text">
+        <div class="col red s12"><p>s12</p></div>
+        <div class="col green s12 m4 l2"><p>s12 m4</p></div>
+        <div class="col green s12 m4 l8"><p>s12 m4</p></div>
+        <div class="col green s12 m4 l2"><p>s12 m4</p></div>
+      </div>
+      <div class="row center-align white-text">
+        <div class="col blue s12 m6 l3"><p>s12 m6 l3</p></div>
+        <div class="col blue s12 m6 l3"><p>s12 m6 l3</p></div>
+        <div class="col blue s12 m6 l3"><p>s12 m6 l3</p></div>
+        <div class="col blue s12 m6 l3"><p>s12 m6 l3</p></div>
+      </div>
+    
+    </div>
+    <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+     <!-- .collapsible sujungia su viršuje esančiu div -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+     </script>
+
+
+</body>
+</html>

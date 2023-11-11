@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    display: block;
+    }
+
+.container {
+    margin: 0 0 2px 0;
+}
+    
+.header {
+    background-color: #0000ff; 
+    /* išcentruoja elementus */
+    margin: 0;
+    /* kai norim kad visas konteineris turėtų kraštelį */
+    padding: 30px 15%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 85% 5% 5% 5%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "logo home about contact";
+    color: white; 
+    font-size: 10px;  
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.home {
+    grid-area: home;
+}
+
+.about {
+    grid-area: about;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.text {
+    background-color: #00ffff; 
+    /* išcentruoja elementus */
+    margin: 0;
+    /* kai norim kad visas konteineris turėtų kraštelį */
+    padding: 270px 15%;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.table {
+    /* išcentruoja elementus */
+    margin: 0;
+    /* kai norim kad visas konteineris turėtų kraštelį */
+    padding: 20px 15%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "green1 green2 green3"
+    "lorem1 lorem2 lorem3"; 
+    font-size: 10px; 
+}
+
+p {
+ font-size: 10px;;
+}
+
+.green1 {
+    grid-area: green1;
+    background-color: #008000;
+    color: #008000;
+    padding: 30px 0 120px 0;
+    margin: 0 8px 0 0;
+    border: 1px solid rgba(160, 160, 160, 0.589);
+}
+.green2 {
+    grid-area: green2;
+    background-color: #008000;
+    color: green;
+    padding: 30px 0 120px 0;
+    margin: 0 8px 0 8px;
+    border: 1px solid rgba(160, 160, 160, 0.589);
+}
+.green3 {
+    grid-area: green3;
+    background-color: #008000;
+    color: green;
+    padding: 30px 0 120px 0;
+    margin: 0 0 0 8px;
+    border: 1px solid rgba(160, 160, 160, 0.589);
+}
+
+.lorem1 {
+    grid-area: lorem1;
+    border: 1px solid rgba(160, 160, 160, 0.589);
+    padding: 10px 10px 48px 10px;
+    margin: 0 8px 0 0;
+}
+
+.lorem1 p{
+    margin: 0;
+}
+.lorem2 {
+    grid-area: lorem2;
+    border: 1px solid rgba(160, 160, 160, 0.589);
+    padding: 10px 10px 48px 10px;
+    margin: 0 8px 0 8px;
+}
+
+.lorem2 p{
+    margin: 0;
+}
+
+.lorem3 {
+    grid-area: lorem3;
+    border: 1px solid rgba(160, 160, 160, 0.589);
+    padding: 10px 10px 48px 10px;
+    margin: 0 0 0 8px;
+}   
+
+.lorem3 p{
+    margin: 0;
+}
+
+.text2 {
+    background-color: #ffff00; 
+    /* išcentruoja elementus */
+    margin: 0;
+    /* kai norim kad visas konteineris turėtų kraštelį */
+    padding: 100px 15%;
+    width: 100%;
+    font-size: 14px;
+ }
+
+ .block {
+    background-color: #ff0000;
+     /* išcentruoja elementus */
+     margin: 0;
+     /* kai norim kad visas konteineris turėtų kraštelį */
+     padding: 20px 15% 5px 15%;
+     width: 100%;
+     display: grid;
+     grid-template-columns: 25% 25% 25% 25%;
+     grid-template-rows: auto;
+     grid-template-areas:
+     "block1 block2 block3 block4"; 
+     font-size: 10px; 
+ }
+
+ 
+.block1 {
+    grid-area: block1;
+    padding: 10px 0 0 0px;
+    margin: 0;
+}
+
+.block2 {
+    grid-area: block2;
+    padding: 10px 0 0px 0px;
+    margin: 0;
+}
+
+.block3 {
+    grid-area: block3;
+    padding: 10px 0 0px 0px;
+    margin: 0;
+}
+.block4 {
+    grid-area: block4;
+    padding: 10px 0 0px 0px;
+    margin: 0;
+}
+
+li {
+    margin: 2px;
+}
+
+.block1 p {
+    margin: 2px;
+}
+
+h1 {
+    font-size: 12 px;
+}
+
+.block h1 {
+    margin-bottom: 2px;
+}

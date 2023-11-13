@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+/* galima išskirstymui į atskirus stulpelius naudoti float elementą */
+/* display: inline-block */
+/* galima naudoti flex-box */
+
 body{
     color: blue;
     display: block;
@@ -56,6 +60,7 @@ body{
 
 .nav{
     grid-area: nav; 
+    /* kai yra nusakyti išdėstymuose priskyrimai tai span nereikia naudoti*/
     grid-column: span 5; 
     background-color: black;
     padding: 0px;  

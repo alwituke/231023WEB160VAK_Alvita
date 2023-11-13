@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    border: 5px;
 }
 
 .gap {
@@ -10,6 +11,7 @@
 }
 
 body {
+    /* galima dėti du div elementus su krašteliu */
     border-style: double;
     font-family: 'complex', Courier, monospace;
 }
@@ -20,8 +22,12 @@ div {
 
 
 .menu {
+    display: flex;
+    justify-content: space-evenly;
     border-top: 2px solid black;
     border-bottom: 1px solid black;
+   
+
 }
 
 .paveikslėliai {

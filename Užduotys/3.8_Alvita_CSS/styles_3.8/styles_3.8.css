@@ -5,6 +5,8 @@
 body{
     display: block;
     }
+    
+/* galima pritaikyti flex elementą */
 
 .container {
     margin: 0 0 2px 0;

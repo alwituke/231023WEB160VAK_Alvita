@@ -7,7 +7,7 @@ form{
     position: relative;
     margin: auto;
 }
-
+/* pasikartojančius selektorius galima surašyti į vieną eilutę */
 input[type="text"] {
     border: 1px solid rgb(196, 196, 196);
     font-size: 22px;
@@ -41,6 +41,8 @@ input[type="submit"]
     border-color: blue;
     border-radius: 0.3cqi;
     font-size: 25px;
-    padding: 10px 30px;   
+    padding: 10px 30px;
+    /* galima naudoti pelės ženkliuko pakeiitimą */
+    /* cursor: pointer;    */
 }
 

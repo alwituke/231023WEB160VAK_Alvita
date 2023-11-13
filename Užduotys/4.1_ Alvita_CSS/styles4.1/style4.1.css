@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+.buttom{
+    margin: auto 0;
+    width: 40px;
+    height: 30px;
+    padding: 0 30px 30px 0px;
+    background-color: #00ffff;  
+    position: relative;
+    /* visi pakitimai bus per 2s */
+    transition: all 2s;   
+}
+
+p {
+    /* reiskia visa bus vir6uje */
+    position: absolute;
+    /* peles zenkliukas rankyte */
+    cursor: pointer;
+    /* pradine teksto spalva */
+    color: #00ffff;
+    padding: 0;
+    /* pradinė pozicija yra už ekrano ribų */
+    margin: 0 0 0 -1000px;
+    /* permatomumas */
+    opacity: 1;
+    transition: all 2s;
+
+    /* teksto dydis */
+    font-size: 30px;
+}
+
+.buttom:hover { 
+    /* kiek vietos užims po to kai užvesim pelę ant elemento */
+    width: 100%;
+}
+
+.buttom:hover p { 
+    /* pozicija po užvedimo */
+    margin-left: 0px;
+    /* teksto spalva po užvedimo */
+    color: black;
+}
+

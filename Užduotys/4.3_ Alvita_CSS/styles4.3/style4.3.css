@@ -22,7 +22,7 @@ p {
     color: #00ffff;
     padding: 0;
     /* pradinė pozicija yra už ekrano ribų */
-    margin: 0 0 0 -1000px;
+    margin: 0 0 0 -800px;
     /* permatomumas */
     opacity: 1;
     transition: all 2s;

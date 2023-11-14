@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #282828;
+}
+
+.container {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.header {
+    background-color: #177cc2;
+    color: white;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    padding: 20px;
+    margin: 0;
+}
+
+.main{
+    display: grid;
+    /* sukuriami trys stulpeliai */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* sukuriamos trys eilutės */
+    grid-template-rows: auto auto;
+    /* kai norim keisti elementų turinio išdėstymo tvarką */
+    grid-template-areas:
+    "athens berlin london"
+    "madrid paris rome";
+    /* fonas */
+    background-color:#e9e9e9;
+    /* nustatome konteinerio plotį */
+    width: 100%;
+    /* išcentruoja elementus */
+    margin: 0 auto ;
+    /* tarpai tarp div elementų */
+    grid-gap: 10px;
+    /* kai norim kad visas konteineris turėtų kraštelį */
+    padding: 10px 10px 15px 10px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.athens {
+    grid-area: athens; 
+}
+
+.berlin {
+    grid-area: berlin;
+}
+
+.london {
+    grid-area: london;
+}
+
+.madrid {
+    grid-area: madrid;
+}
+
+.paris {
+    grid-area: paris;
+}
+
+.rome {
+    grid-area: rome;
+}
+
+/* div su klase main viduje */
+.main div {
+    /* tarpai nuo div krašto visuose contaider divuose */
+    margin: 10px;
+    background-color: white;
+    box-shadow:0px 0px 15px 2px rgba(128, 128, 128, 0.575);
+}
+
+.image {
+    width: 100%;
+}
+
+/* mažinam teksta ir padding kai ekrano plotis mažėja */
+@media only screen and (max-width: 1600px){
+    p {
+        font-size: 20px;
+        padding: 6px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    p {
+        font-size: 15px;
+        padding: 3px;
+    }     
+}
+
+@media only screen and (max-width: 750px){
+    p {
+        font-size: 12px;
+        padding: 0px;
+    }     
+}
+

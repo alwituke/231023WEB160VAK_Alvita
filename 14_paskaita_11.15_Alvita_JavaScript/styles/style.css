@@ -1,0 +1,12 @@
+.active{
+    color: blue;
+}
+
+body {
+    background-color: red;
+}
+
+/* kai keiciam klase keiciasi fono spalva */
+body.change-bg {
+    background-color: blue;
+}

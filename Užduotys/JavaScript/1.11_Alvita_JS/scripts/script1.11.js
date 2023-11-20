@@ -27,7 +27,7 @@ darbuotojas.map(function(darbuotojas) {
     darbuotojas.atlyginimas = darbuotojas.buvesAtlyginimas + darbuotojas.buvesAtlyginimas * atlyginimoKoeficientas/100;
 
     darbuotojas.algosPalyginimas = function (){
-        console.log(`Darbuotojo ${this.vardas} atlyginimas padidėjo nuo ${this.buvesAtlyginimas} iki ${this.atlyginimas} (${((this.atlyginimas-this.buvesAtlyginimas)/this.buvesAtlyginimas)*100}%)`);
+        console.log(`Darbuotojo ${this.vardas} atlyginimas padidėjo nuo ${this.buvesAtlyginimas} iki ${this.atlyginimas} (${Math.round(((this.atlyginimas-this.buvesAtlyginimas)/this.buvesAtlyginimas)*100)}%)`);
     }
 return darbuotojas;
 });

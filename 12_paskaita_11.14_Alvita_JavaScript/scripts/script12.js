@@ -168,7 +168,9 @@ console.log(k3)
 //new Data ("2023-05-12")
 function arPilnametis(gimimoData) {
     // reikia js siandien daros
-    let dabartiniaiMetai = new Data() getFullYear();
+    let dabartiniaiMetai = new Data() 
+    //getFullYear()
+    ;
     if (dabartiniaiMetai - gimimoData < 20) {
         return false;
         // jei gauanm false - funkcija sustoje tikrinti, o jeigu s1lyga neteisa,  funkcija ziuri kas toliau

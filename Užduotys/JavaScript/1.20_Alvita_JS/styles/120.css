@@ -1,0 +1,48 @@
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid green;
+}
+
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+}
+
+.pentagon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 0;
+  width: 180px;
+  border-top: 180px solid rgb(0, 66, 128);
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+}
+
+.pentagon:after{
+  position: absolute;
+  content: '';
+  border-bottom: 180px solid rgb(0, 66, 128);
+  border-left: 180px solid transparent;
+  border-right: 180px solid transparent;
+  bottom: 180px;
+  left: -90px;
+}

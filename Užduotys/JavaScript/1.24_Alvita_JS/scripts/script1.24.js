@@ -1,13 +1,14 @@
-let mygtukas = document.getElementById("pritaikyti");
-
 
 //apsirašom formą
 let myForm = document.getElementById("my-form");
+// div priskirti elementui
 let divas = document.querySelector("div");
 
 myForm.addEventListener("submit", function(event){
+    // sustabdom naršyklės auto rėžimą
     event.preventDefault();
     
+    // myForm.elements parodp visus tos formos elementus pagal indeksus ar vardus
     let plotis = myForm.elements[1].value;
     let aukstis = myForm.elements[2].value;
     let spalva = myForm.elements.firstName.value;
